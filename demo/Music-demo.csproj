@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{805D11DF-9489-41E7-A619-BCB08DA1B491}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cma.cimiss.demo</RootNamespace>
+    <AssemblyName>demo1.4.0</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ice, Version=3.4.2.0, Culture=neutral, PublicKeyToken=cdd571ade22f2f16, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Ice.dll</HintPath>
+    </Reference>
+    <Reference Include="music-client-v1.4.0">
+      <HintPath>..\dll\music-client-v1.4.0.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clib\FileInfoSearchAPI\FileInfoSearchAPI_CLIB_callAPI_to_serializedStr_TEXT.cs" />
+    <Compile Include="clib\FileInfoSearchAPI\FileInfoSearchAPI_CLIB_callAPI_to_serializedStr_JSON.cs" />
+    <Compile Include="clib\FileInfoSearchAPI\FileInfoSearchAPI_CLIB_callAPI_to_serializedStr_XML.cs" />
+    <Compile Include="clib\FileInfoSearchAPI\FileInfoSearchAPI_CLIB_callAPI_to_serializedStr_HTML.cs" />
+    <Compile Include="clib\FileInfoSearchAPI\FileInfoSearchAPI_CLIB_callAPI_to_fileList.cs" />
+    <Compile Include="clib\FileInfoSearchAPI\FileInfoSearchAPI_CLIB_callAPI_to_downFile.cs" />
+    <Compile Include="clib\FileInfoSearchAPI\FileInfoSearchAPI_CLIB_callAPI_to_serializedStr_JSONP.cs" />
+    <Compile Include="clib\FileInfoSearchAPI\FileInfoSearchAPI_CLIB_callAPI_to_downFileByte.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_saveAsFile_JSONP.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_serializedStr_JSONP.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_serializedStr_XML.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_serializedStr_TEXT.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_serializedStr_KML.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_serializedStr_JSON.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_serializedStr_HTML.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_saveAsFile_TEXT.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_saveAsFile_KML.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_saveAsFile_JSON.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_saveAsFile_HTML.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_serializedStr_XML.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_serializedStr_TEXT.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_serializedStr_KML.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_serializedStr_JSON.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_serializedStr_HTML.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_saveAsFile_XML.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_saveAsFile_TEXT.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_saveAsFile_KML.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_saveAsFile_JSON.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_saveAsFile_HTML.cs" />
+    <Compile Include="clib\GridElemPointSearchAPI\GridElemPointSearchAPI_CLIB_callAPI_to_array2D.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_gridArray2D.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_saveAsFile_XML.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_saveAsFile_JSONP.cs" />
+    <Compile Include="clib\GridElemRectSearchAPI\GridElemRectSearchAPI_CLIB_callAPI_to_serializedStr_JSONP.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_saveAsFile_TEXT.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_saveAsFile_KML.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_saveAsFile_JSON.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_saveAsFile_HTML.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_array2D.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_saveAsFile_XML.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_serializedStr_HTML.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_serializedStr_JSON.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_serializedStr_KML.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_serializedStr_TEXT.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_serializedStr_XML.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_saveAsFile_JSONP.cs" />
+    <Compile Include="clib\StaElemSearchAPI\StaElemSearchAPI_CLIB_callAPI_to_serializedStr_JSONP.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_array2D.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_saveAsFile_HTML.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_saveAsFile_JSON.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_saveAsFile_KML.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_saveAsFile_TEXT.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_saveAsFile_XML.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_serializedStr_HTML.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_serializedStr_JSON.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_serializedStr_KML.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_serializedStr_TEXT.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_serializedStr_XML.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_saveAsFile_JSONP.cs" />
+    <Compile Include="clib\StaElemStatAPI\StaElemStatAPI_CLIB_callAPI_to_serializedStr_JSONP.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_array2D.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_saveAsFile_HTML.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_saveAsFile_JSON.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_saveAsFile_KML.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_saveAsFile_TEXT.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_saveAsFile_XML.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_serializedStr_HTML.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_serializedStr_JSON.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_serializedStr_KML.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_serializedStr_TEXT.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_serializedStr_XML.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_saveAsFile_JSONP.cs" />
+    <Compile Include="clib\StaInfoSearchAPI\StaInfoSearchAPI_CLIB_callAPI_to_serializedStr_JSONP.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rest\FileInfoSearchAPI\FileInfoSearchAPI_REST_rest_HTML.cs" />
+    <Compile Include="rest\FileInfoSearchAPI\FileInfoSearchAPI_REST_rest_JSON.cs" />
+    <Compile Include="rest\FileInfoSearchAPI\FileInfoSearchAPI_REST_rest_TEXT.cs" />
+    <Compile Include="rest\FileInfoSearchAPI\FileInfoSearchAPI_REST_rest_XML.cs" />
+    <Compile Include="rest\FileInfoSearchAPI\FileInfoSearchAPI_REST_rest_JSONP.cs" />
+    <Compile Include="rest\GridElemPointSearchAPI\GridElemPointSearchAPI_REST_rest_HTML.cs" />
+    <Compile Include="rest\GridElemPointSearchAPI\GridElemPointSearchAPI_REST_rest_JSON.cs" />
+    <Compile Include="rest\GridElemPointSearchAPI\GridElemPointSearchAPI_REST_rest_KML.cs" />
+    <Compile Include="rest\GridElemPointSearchAPI\GridElemPointSearchAPI_REST_rest_TEXT.cs" />
+    <Compile Include="rest\GridElemPointSearchAPI\GridElemPointSearchAPI_REST_rest_XML.cs" />
+    <Compile Include="rest\GridElemPointSearchAPI\GridElemPointSearchAPI_REST_rest_JSONP.cs" />
+    <Compile Include="rest\GridElemRectSearchAPI\GridElemRectSearchAPI_REST_rest_HTML.cs" />
+    <Compile Include="rest\GridElemRectSearchAPI\GridElemRectSearchAPI_REST_rest_JSON.cs" />
+    <Compile Include="rest\GridElemRectSearchAPI\GridElemRectSearchAPI_REST_rest_KML.cs" />
+    <Compile Include="rest\GridElemRectSearchAPI\GridElemRectSearchAPI_REST_rest_TEXT.cs" />
+    <Compile Include="rest\GridElemRectSearchAPI\GridElemRectSearchAPI_REST_rest_XML.cs" />
+    <Compile Include="rest\GridElemRectSearchAPI\GridElemRectSearchAPI_REST_rest_JSONP.cs" />
+    <Compile Include="rest\StaElemSearchAPI\StaElemSearchAPI_REST_rest_XML.cs" />
+    <Compile Include="rest\StaElemSearchAPI\StaElemSearchAPI_REST_rest_HTML.cs" />
+    <Compile Include="rest\StaElemSearchAPI\StaElemSearchAPI_REST_rest_JSON.cs" />
+    <Compile Include="rest\StaElemSearchAPI\StaElemSearchAPI_REST_rest_TEXT.cs" />
+    <Compile Include="rest\StaElemSearchAPI\StaElemSearchAPI_REST_rest_KML.cs" />
+    <Compile Include="rest\StaElemSearchAPI\StaElemSearchAPI_REST_rest_JSONP.cs" />
+    <Compile Include="rest\StaElemStatAPI\StaElemStatAPI_REST_rest_HTML.cs" />
+    <Compile Include="rest\StaElemStatAPI\StaElemStatAPI_REST_rest_JSON.cs" />
+    <Compile Include="rest\StaElemStatAPI\StaElemStatAPI_REST_rest_KML.cs" />
+    <Compile Include="rest\StaElemStatAPI\StaElemStatAPI_REST_rest_TEXT.cs" />
+    <Compile Include="rest\StaElemStatAPI\StaElemStatAPI_REST_rest_XML.cs" />
+    <Compile Include="rest\StaElemStatAPI\StaElemStatAPI_REST_rest_JSONP.cs" />
+    <Compile Include="rest\StaInfoSearchAPI\StaInfoSearchAPI_REST_rest_HTML.cs" />
+    <Compile Include="rest\StaInfoSearchAPI\StaInfoSearchAPI_REST_rest_JSON.cs" />
+    <Compile Include="rest\StaInfoSearchAPI\StaInfoSearchAPI_REST_rest_KML.cs" />
+    <Compile Include="rest\StaInfoSearchAPI\StaInfoSearchAPI_REST_rest_TEXT.cs" />
+    <Compile Include="rest\StaInfoSearchAPI\StaInfoSearchAPI_REST_rest_XML.cs" />
+    <Compile Include="rest\StaInfoSearchAPI\StaInfoSearchAPI_REST_rest_JSONP.cs" />
+    <Compile Include="util\FileByteUtil.cs" />
+    <Compile Include="util\NmicWeb.cs" />
+    <Compile Include="util\RestUtil.cs" />
+    <Compile Include="util\ClibUtil.cs" />
+    <Compile Include="util\FormatUtil.cs" />
+    <Compile Include="util\WebsUtil.cs" />
+    <Compile Include="util\Ws.cs" />
+    <Compile Include="webs\FileInfoSearchAPI\FileInfoSearchAPI_WEBS_callAPI_to_array.cs" />
+    <Compile Include="webs\FileInfoSearchAPI\FileInfoSearchAPI_WEBS_callAPI_to_serializedStr_HTML.cs" />
+    <Compile Include="webs\FileInfoSearchAPI\FileInfoSearchAPI_WEBS_callAPI_to_serializedStr_JSON.cs" />
+    <Compile Include="webs\FileInfoSearchAPI\FileInfoSearchAPI_WEBS_callAPI_to_serializedStr_TEXT.cs" />
+    <Compile Include="webs\FileInfoSearchAPI\FileInfoSearchAPI_WEBS_callAPI_to_serializedStr_XML.cs" />
+    <Compile Include="webs\FileInfoSearchAPI\FileInfoSearchAPI_WEBS_callAPI_to_serializedStr_JSONP.cs" />
+    <Compile Include="webs\GridElemPointSearchAPI\GridElemPointSearchAPI_WEBS_callAPI_to_array.cs" />
+    <Compile Include="webs\GridElemPointSearchAPI\GridElemPointSearchAPI_WEBS_callAPI_to_serializedStr_HTML.cs" />
+    <Compile Include="webs\GridElemPointSearchAPI\GridElemPointSearchAPI_WEBS_callAPI_to_serializedStr_JSON.cs" />
+    <Compile Include="webs\GridElemPointSearchAPI\GridElemPointSearchAPI_WEBS_callAPI_to_serializedStr_KML.cs" />
+    <Compile Include="webs\GridElemPointSearchAPI\GridElemPointSearchAPI_WEBS_callAPI_to_serializedStr_TEXT.cs" />
+    <Compile Include="webs\GridElemPointSearchAPI\GridElemPointSearchAPI_WEBS_callAPI_to_serializedStr_XML.cs" />
+    <Compile Include="webs\GridElemPointSearchAPI\GridElemPointSearchAPI_WEBS_callAPI_to_serializedStr_JSONP.cs" />
+    <Compile Include="webs\GridElemRectSearchAPI\GridElemRectSearchAPI_WEBS_callAPI_to_serializedStr_HTML.cs" />
+    <Compile Include="webs\GridElemRectSearchAPI\GridElemRectSearchAPI_WEBS_callAPI_to_serializedStr_JSON.cs" />
+    <Compile Include="webs\GridElemRectSearchAPI\GridElemRectSearchAPI_WEBS_callAPI_to_serializedStr_KML.cs" />
+    <Compile Include="webs\GridElemRectSearchAPI\GridElemRectSearchAPI_WEBS_callAPI_to_serializedStr_TEXT.cs" />
+    <Compile Include="webs\GridElemRectSearchAPI\GridElemRectSearchAPI_WEBS_callAPI_to_serializedStr_XML.cs" />
+    <Compile Include="webs\GridElemRectSearchAPI\GridElemRectSearchAPI_WEBS_callAPI_to_serializedStr_JSONP.cs" />
+    <Compile Include="webs\StaElemSearchAPI\StaElemSearchAPI_WEBS_callAPI_to_array.cs" />
+    <Compile Include="webs\StaElemSearchAPI\StaElemSearchAPI_WEBS_callAPI_to_serializedStr_HTML.cs" />
+    <Compile Include="webs\StaElemSearchAPI\StaElemSearchAPI_WEBS_callAPI_to_serializedStr_JSON.cs" />
+    <Compile Include="webs\StaElemSearchAPI\StaElemSearchAPI_WEBS_callAPI_to_serializedStr_KML.cs" />
+    <Compile Include="webs\StaElemSearchAPI\StaElemSearchAPI_WEBS_callAPI_to_serializedStr_TEXT.cs" />
+    <Compile Include="webs\StaElemSearchAPI\StaElemSearchAPI_WEBS_callAPI_to_serializedStr_XML.cs" />
+    <Compile Include="webs\StaElemSearchAPI\StaElemSearchAPI_WEBS_callAPI_to_serializedStr_JSONP.cs" />
+    <Compile Include="webs\StaElemStatAPI\StaElemStatAPI_WEBS_callAPI_to_array.cs" />
+    <Compile Include="webs\StaElemStatAPI\StaElemStatAPI_WEBS_callAPI_to_serializedStr_HTML.cs" />
+    <Compile Include="webs\StaElemStatAPI\StaElemStatAPI_WEBS_callAPI_to_serializedStr_JSON.cs" />
+    <Compile Include="webs\StaElemStatAPI\StaElemStatAPI_WEBS_callAPI_to_serializedStr_KML.cs" />
+    <Compile Include="webs\StaElemStatAPI\StaElemStatAPI_WEBS_callAPI_to_serializedStr_TEXT.cs" />
+    <Compile Include="webs\StaElemStatAPI\StaElemStatAPI_WEBS_callAPI_to_serializedStr_XML.cs" />
+    <Compile Include="webs\StaElemStatAPI\StaElemStatAPI_WEBS_callAPI_to_serializedStr_JSONP.cs" />
+    <Compile Include="webs\StaInfoSearchAPI\StaInfoSearchAPI_WEBS_callAPI_to_array.cs" />
+    <Compile Include="webs\StaInfoSearchAPI\StaInfoSearchAPI_WEBS_callAPI_to_serializedStr_HTML.cs" />
+    <Compile Include="webs\StaInfoSearchAPI\StaInfoSearchAPI_WEBS_callAPI_to_serializedStr_JSON.cs" />
+    <Compile Include="webs\StaInfoSearchAPI\StaInfoSearchAPI_WEBS_callAPI_to_serializedStr_TEXT.cs" />
+    <Compile Include="webs\StaInfoSearchAPI\StaInfoSearchAPI_WEBS_callAPI_to_serializedStr_XML.cs" />
+    <Compile Include="webs\StaInfoSearchAPI\StaInfoSearchAPI_WEBS_callAPI_to_serializedStr_KML.cs" />
+    <Compile Include="webs\StaInfoSearchAPI\StaInfoSearchAPI_WEBS_callAPI_to_serializedStr_JSONP.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="client.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
